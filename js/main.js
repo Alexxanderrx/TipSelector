@@ -1,3 +1,4 @@
+// Hecho por Víctor Alexander Morales Lucero
 var num = 0;
 var text_error=document.getElementById("text_error");
 
