@@ -140,6 +140,7 @@ el getDocumentById) xd ☻ */
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 24px;
+    user-select: none;
 }
 
 .btn_dark_green:hover{
@@ -225,7 +226,6 @@ el getDocumentById) xd ☻ */
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
-    /* border: 1px solid black; */
 }
 
 /* Y finalmente el boton */
@@ -240,6 +240,7 @@ el getDocumentById) xd ☻ */
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 20px;
+    user-select: none;
 }
 
 #btn_reset:hover{
@@ -253,7 +254,7 @@ el getDocumentById) xd ☻ */
 @media screen and (max-width: 950px) {
     body{
         width: 100vw;
-        height: 950px;
+        height: 1050px;
     }
     .text_dark{
         color: hsl(183, 100%, 15%);
