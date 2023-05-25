@@ -95,7 +95,7 @@ function resetAll(){
     people.style.borderColor = "";
     btn_reset.disabled = true; 
     // nuevo style
-    people.style.outline= "3px solid transparent";
+    people.style.outline= "";
 };
 
 function val_per(){
