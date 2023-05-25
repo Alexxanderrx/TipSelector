@@ -5,11 +5,8 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-/* font-family: 'Space Mono', monospace; */
 
 body{
-    /* acuerdate de cambiarlos (los width):v plox */
-    /* width: 600px; */
     width: 1440px;
     height: 720px;
     background-color: hsl(185, 41%, 84%);
@@ -24,7 +21,6 @@ body{
 /* -----------textos-------------- */
 .text_dark{
     color: hsl(183, 100%, 15%);
-    /* font-size: 24px; */
     margin-bottom: 60px;
     margin-left: 60px;
     user-select: none;
@@ -32,13 +28,11 @@ body{
 .text_gray{
     font-size: 15px;
     color: hsl(186, 14%, 43%);
-    /* background-color: blue; */
     padding-bottom: 5px;
     user-select: none;
 }
 #text_error{
     font-size: 15px;
-    /* background-color: aqua; */
     color: transparent;
     user-select: none;
 }
@@ -103,7 +97,6 @@ el getDocumentById) xd ☻ */
 }
 /* -------------Caja para la cuenta------------ */
 #box_bill{
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
 }
@@ -124,17 +117,14 @@ el getDocumentById) xd ☻ */
 
 #bill:focus{
     outline: 3px solid hsl(172, 67%, 45%);
-    /* outline: none!important; */
     border-color: hsl(172, 67%, 45%);
 }
 /* -------------Caja para la propina------------ */
 #box_tip{
-    /* background-color: rgb(81, 117, 117); */
     display: flex;
     flex-direction: column;
 }
 #box_tip_btns{
-    /* background-color: rgb(242, 134, 231); */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -154,7 +144,8 @@ el getDocumentById) xd ☻ */
 
 .btn_dark_green:hover{
     background-color:hsl(173, 61%, 77%);
-    color: hsl(183, 100%, 15%);;
+    color: hsl(183, 100%, 15%);
+    transition: 500ms;
 }
 
 .btn_dark_green:focus{
@@ -179,7 +170,6 @@ el getDocumentById) xd ☻ */
 }
 
 #custom:focus{
-    /* outline: none !important; */
     outline: 3px solid hsl(172, 67%, 45%);
     border-color: hsl(172, 67%, 45%) ;
     text-align: right;
@@ -213,7 +203,6 @@ el getDocumentById) xd ☻ */
 
 #people:focus{
     outline: 3px solid hsl(172, 67%, 45%);
-    /* outline: none !important; */
     border-color: hsl(172, 67%, 45%) ;;
 }
 /* --------------------Caja verde oscuro de la derecha----------------- */
@@ -229,7 +218,6 @@ el getDocumentById) xd ☻ */
 }
 
 #box_data{
-    /* background-color: rgb(84, 11, 255); */
     width: 250px;
 }
 
@@ -256,6 +244,7 @@ el getDocumentById) xd ☻ */
 
 #btn_reset:hover{
     background-color:hsl(173, 61%, 77%);
+    transition: 500ms;
 }
 #btn_reset:disabled{
     background-color: hsl(183, 80%, 24%);
