@@ -80,6 +80,7 @@ btn_reset.addEventListener("click", (e) => {
     resetAll();
 });
 
+
 function resetCus(){
     custom.value = "";
 };
