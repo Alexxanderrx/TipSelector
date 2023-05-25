@@ -115,6 +115,7 @@ el getDocumentById) xd ☻ */
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     color: hsl(183, 100%, 15%);
+    border: 0;
     border-color: transparent;
     background-color: hsl(189, 41%, 97%);
     border-radius: 5px;
@@ -122,7 +123,8 @@ el getDocumentById) xd ☻ */
 }
 
 #bill:focus{
-    outline: none !important;
+    outline: 3px solid hsl(172, 67%, 45%);
+    /* outline: none!important; */
     border-color: hsl(172, 67%, 45%);
 }
 /* -------------Caja para la propina------------ */
@@ -165,6 +167,7 @@ el getDocumentById) xd ☻ */
     font-size: 24px;
     border-radius: 5px;
     width: 99px;
+    border: 0;
     border-color: transparent;
     text-align: center;
     background-color: hsl(189, 41%, 97%);
@@ -176,7 +179,8 @@ el getDocumentById) xd ☻ */
 }
 
 #custom:focus{
-    outline: none !important;
+    /* outline: none !important; */
+    outline: 3px solid hsl(172, 67%, 45%);
     border-color: hsl(172, 67%, 45%) ;
     text-align: right;
 }
@@ -200,6 +204,7 @@ el getDocumentById) xd ☻ */
     font-weight: 700;
     font-size: 24px;
     color: hsl(183, 100%, 15%);
+    border: 0;
     border-color: transparent;
     background-color: hsl(189, 41%, 97%);
     border-radius: 5px;
@@ -207,7 +212,8 @@ el getDocumentById) xd ☻ */
 }
 
 #people:focus{
-    outline: none !important;
+    outline: 3px solid hsl(172, 67%, 45%);
+    /* outline: none !important; */
     border-color: hsl(172, 67%, 45%) ;;
 }
 /* --------------------Caja verde oscuro de la derecha----------------- */
