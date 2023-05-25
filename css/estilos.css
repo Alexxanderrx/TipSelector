@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* font-family: 'Space Mono', monospace; */
+
+body{
+    /* acuerdate de cambiarlos (los width):v plox */
+    /* width: 600px; */
+    width: 1440px;
+    height: 720px;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+/* -----------textos-------------- */
+.text_dark{
+    color: hsl(183, 100%, 15%);
+    /* font-size: 24px; */
+    margin-bottom: 60px;
+    margin-left: 60px;
+    user-select: none;
+}
+.text_gray{
+    font-size: 15px;
+    color: hsl(186, 14%, 43%);
+    /* background-color: blue; */
+    padding-bottom: 5px;
+    user-select: none;
+}
+#text_error{
+    font-size: 15px;
+    /* background-color: aqua; */
+    color: transparent;
+    user-select: none;
+}
+.text_white{
+    color:hsl(0, 0%, 100%);
+    font-size: 13px;
+    user-select: none;
+}
+.text_gray02{
+    color:hsl(185, 41%, 84%);
+    font-size: 10px;
+    user-select: none;
+}
+/* ↓↓↓↓ no dice text por que son los span 
+(por ese mismo motivo no usé clases porque 
+sino nose como los voy a llamar por separado en
+el getDocumentById) xd ☻ */
+#tip_amount{
+    color:hsl(172, 67%, 45%);
+    font-size: 35px;
+    user-select: none;
+}
+#total{
+    color:hsl(172, 67%, 45%);
+    font-size: 35px;
+    user-select: none;
+}
+/* Y las imagenes  */
+#img_dolar{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 35px;
+    user-select: none;
+}
+#img_person{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 35px;
+    user-select: none;
+}
+/* -------------Caja blanca de fondo-------------- */
+#box_white{
+    width: 750px;
+    height: 360px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------Caja de la izquierda (dueño y señor de las tierra de la izquierda :v, el que manda pues)------------------- */
+#box_left{
+    width: 365px;
+    height: 300px;
+    /* background-color: rgb(211, 154, 154); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* -------------Caja para la cuenta------------ */
+#box_bill{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+#bill{
+    height: 30px;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    border-color: transparent;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+#bill:focus{
+    outline: none !important;
+    border-color: hsl(172, 67%, 45%);
+}
+/* -------------Caja para la propina------------ */
+#box_tip{
+    /* background-color: rgb(81, 117, 117); */
+    display: flex;
+    flex-direction: column;
+}
+#box_tip_btns{
+    /* background-color: rgb(242, 134, 231); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn_dark_green{
+    border: none;
+    color: hsl(0, 0%, 100%);
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn_dark_green:hover{
+    background-color:hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%);;
+}
+
+.btn_dark_green:focus{
+    border: none;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+#custom{
+    font-size: 24px;
+    border-radius: 5px;
+    width: 99px;
+    border-color: transparent;
+    text-align: center;
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    padding-right: 10px;
+    user-select: none;
+}
+
+#custom:focus{
+    outline: none !important;
+    border-color: hsl(172, 67%, 45%) ;
+    text-align: right;
+}
+
+/* -------------Caja para las personas------------ */
+#box_people{
+   /* background-color: rgb(170, 209, 209); */
+    display: flex;
+    flex-direction: column; 
+}
+
+#box_people_text{
+    display: flex;
+    justify-content: space-between; 
+}
+
+#people{
+    height: 30px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    border-color: transparent;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+#people:focus{
+    outline: none !important;
+    border-color: hsl(172, 67%, 45%) ;;
+}
+/* --------------------Caja verde oscuro de la derecha----------------- */
+#box_dark_green{
+    width: 310px;
+    height: 310px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#box_data{
+    /* background-color: rgb(84, 11, 255); */
+    width: 250px;
+}
+
+.box_tt{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    /* border: 1px solid black; */
+}
+
+/* Y finalmente el boton */
+#btn_reset{
+    border: none;
+    color: hsl(183, 100%, 15%);
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#btn_reset:hover{
+    background-color:hsl(173, 61%, 77%);
+}
+#btn_reset:disabled{
+    background-color: hsl(183, 80%, 24%);
+}
+
+@media screen and (max-width: 950px) {
+    body{
+        width: 100vw;
+        height: 950px;
+    }
+    .text_dark{
+        color: hsl(183, 100%, 15%);
+        /* font-size: 24px; */
+        margin-bottom: 20px;
+        margin-left: 0px;
+        user-select: none;
+    }
+    #box_white{
+        height: 820px;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        /* padding: 20px; */
+    }
+    #box_left{
+        margin-left: 20px;
+        width: 330px;
+        height: 400px;
+        /* margin-top: 30px; */
+    }
+    .btn_dark_green{
+        width: 150px;
+    }
+    #bill{
+        width: 295px;
+    }
+    #custom{
+        width: 135px;
+    }
+    #people{
+        width: 295px;
+    }
+    #box_dark_green{
+        height: 240px;
+    }
+    #box_data{
+        margin-top: 40px;
+    }
+    #box_people_text{
+        width: 305px;
+    }
+    .box_tt{
+        margin-top: 0px;
+    }
+    #tip_amount{
+        font-size: 30px;
+    }
+    #total{
+        font-size: 30px;
+    }
+}

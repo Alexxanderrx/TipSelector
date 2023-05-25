@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Tip calculator app</title>
+
+  <link rel="stylesheet" href="./css/estilos.css">
+  <script src="./js/main.js" defer></script>
+
+</head>
+
+<body>
+  <label class="text_dark">S P L I<br>T T E R</label>
+  <form action="" method="post">
+    <div id="box_white">
+      <div id="box_left">
+        <div id="box_bill">
+          <label class="text_gray">Bill</label>
+          <img id="img_dolar" src="./images/icon-dollar.svg" alt="Aqui deveria haber un icono de dolar.">
+          <!-- Primer input -->
+          <input type="number" id="bill" name="bill" oninput="calcular()">
+
+        </div>
+        <div id="box_tip">
+          <label class="text_gray">Select Tip %</label>
+          <div id="box_tip_btns">
+            <button id="btn5" class="btn_dark_green">5%</button>
+            <button id="btn10" class="btn_dark_green">10%</button>
+            <button id="btn15" class="btn_dark_green">15%</button>
+            <button id="btn25" class="btn_dark_green">25%</button>
+            <button id="btn50" class="btn_dark_green">50%</button>
+
+            <!-- Segundo input -->
+            <input type="number" id="custom" name="custom" placeholder="Custom" oninput="calc_cus()">
+
+          </div>
+        </div>
+        <div id="box_people">
+          <div id="box_people_text">
+            <label class="text_gray">Number of People</label>
+            <label id="text_error">Can't be zero</label>
+          </div>
+          <!-- Tercer input -->
+          <img id="img_person" src="./images/icon-person.svg" alt="Aqui deveria haber un icono de persona.">
+          <input type="number" id="people" name="people" oninput="calcular()">
+
+        </div>
+      </div>
+      <div id="box_dark_green">
+        <div id="box_data">
+          <div class="box_tt">
+            <label class="text_white">Tip Amount<br><span class="text_gray02">/ person</span></label>
+            <label id="tip_amount">$0.00</label>
+          </div>
+          <div class="box_tt">
+            <label class="text_white">Total<br><span class="text_gray02">/ person</span></label>
+            <label id="total">$0.00</label>
+          </div>
+        </div>
+        <button id="btn_reset">RESET</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
