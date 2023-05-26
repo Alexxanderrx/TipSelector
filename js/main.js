@@ -21,40 +21,34 @@ btn_reset.disabled = true;
 
 btn5.addEventListener("click", (e) => {
     num = 5;
-    e.preventDefault();
-    resetCus()
-    calcular();
-
+    activar();
 });
 
 btn10.addEventListener("click", (e) => {
     num = 10;
-    e.preventDefault();
-    resetCus()
-    calcular();
+    activar();
 });
 
 btn15.addEventListener("click", (e) => {
     num = 15;
-    e.preventDefault();
-    resetCus()
-    calcular();
+    activar();
 });
 
 btn25.addEventListener("click", (e) => {
     num = 25;
-    e.preventDefault();
-    resetCus()
-    calcular();
+    activar();
 });
 
 btn50.addEventListener("click", (e) => {
     num = 50;
-    e.preventDefault();
-    resetCus()
-    calcular();
-    
+    activar();
 });
+
+function activar(){
+    e.preventDefault();
+    resetCus();
+    calcular();
+}
 
 function calc_cus(){
     num = custom.value;
