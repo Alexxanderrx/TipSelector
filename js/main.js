@@ -120,7 +120,7 @@ function val_per(){
         }
         people.style.borderColor = ""
         // nuevo style
-        people.style.outline= "3px solid transparent";
+        people.style.outline= "";
         people.style.caretColor = "";
 
         text_error.style.color = "transparent";
