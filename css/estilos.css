@@ -208,7 +208,7 @@ el getDocumentById) xd ☻ */
 
 #people:focus{
     outline: 3px solid hsl(172, 67%, 45%);
-    border-color: hsl(172, 67%, 45%) ;;
+    border-color: hsl(172, 67%, 45%) ;
 }
 /* --------------------Caja verde oscuro de la derecha----------------- */
 #box_dark_green{
