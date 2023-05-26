@@ -113,6 +113,8 @@ el getDocumentById) xd ☻ */
     background-color: hsl(189, 41%, 97%);
     border-radius: 5px;
     padding-right: 10px;
+
+    caret-color: hsl(172, 67%, 45%);
 }
 
 #bill:focus{
@@ -168,6 +170,7 @@ el getDocumentById) xd ☻ */
     color: hsl(183, 100%, 15%);
     padding-right: 10px;
     user-select: none;
+    caret-color: hsl(172, 67%, 45%);
 }
 
 #custom:focus{
@@ -200,6 +203,7 @@ el getDocumentById) xd ☻ */
     background-color: hsl(189, 41%, 97%);
     border-radius: 5px;
     padding-right: 10px;
+    caret-color: hsl(172, 67%, 45%);
 }
 
 #people:focus{
