@@ -98,6 +98,7 @@ function resetAll(){
     btn_reset.disabled = true; 
     // nuevo style
     people.style.outline= "";
+    people.style.caretColor = "";
 };
 
 function val_per(){
@@ -106,6 +107,7 @@ function val_per(){
         text_error.style.color = "red";
         // nuevo style
         people.style.outline= "3px solid red";
+        people.style.caretColor = "red";
 
         tip_amount.innerHTML = "$0.00";
         total.innerHTML = "$0.00";
@@ -119,6 +121,7 @@ function val_per(){
         people.style.borderColor = ""
         // nuevo style
         people.style.outline= "3px solid transparent";
+        people.style.caretColor = "";
 
         text_error.style.color = "transparent";
     };
