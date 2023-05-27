@@ -29,17 +29,18 @@
         </div>
         <div id="box_tip">
           <label class="text_gray">Select Tip %</label>
-          <div id="box_tip_btns">
-            <button id="btn5" class="btn_dark_green">5%</button>
-            <button id="btn10" class="btn_dark_green">10%</button>
-            <button id="btn15" class="btn_dark_green">15%</button>
-            <button id="btn25" class="btn_dark_green">25%</button>
-            <button id="btn50" class="btn_dark_green">50%</button>
+          <form>
+            <div id="box_tip_btns">
+              <button type="button" id="btn5" class="btn_dark_green" value="5">5%</button>
+              <button type="button" id="btn10" class="btn_dark_green" value="10">10%</button>
+              <button type="button" id="btn15" class="btn_dark_green" value="15">15%</button>
+              <button type="button" id="btn25" class="btn_dark_green" value="25">25%</button>
+              <button type="button" id="btn50" class="btn_dark_green" value="50">50%</button>
 
-            <!-- Segundo input -->
-            <input type="number" id="custom" name="custom" placeholder="Custom" oninput="calc_cus()">
-
-          </div>
+              <!-- Segundo input -->
+              <input type="number" id="custom" name="custom" placeholder="Custom" oninput="calc_cus()">
+            </div>
+          </form>
         </div>
         <div id="box_people">
           <div id="box_people_text">
@@ -68,4 +69,5 @@
     </div>
   </form>
 </body>
+
 </html>
