@@ -128,6 +128,7 @@ el getDocumentById) xd ☻ */
 }
 #box_tip_btns{
     display: flex;
+    /* background-color: aqua; */
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -142,6 +143,7 @@ el getDocumentById) xd ☻ */
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 24px;
+    outline: none;
     user-select: none;
 }
 
@@ -160,7 +162,7 @@ el getDocumentById) xd ☻ */
 #custom{
     font-size: 24px;
     border-radius: 5px;
-    width: 99px;
+    width: 103px;
     border: 0;
     border-color: transparent;
     text-align: center;
