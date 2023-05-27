@@ -6,12 +6,6 @@ const bill = document.getElementById("bill");
 const custom = document.getElementById("custom");
 const people = document.getElementById("people");
 
-const btn5 = document.getElementById("btn5");
-const btn10 = document.getElementById("btn10");
-const btn15 = document.getElementById("btn15");
-const btn25 = document.getElementById("btn25");
-const btn50 = document.getElementById("btn50");
-
 const tip_amount = document.getElementById("tip_amount");
 const total = document.getElementById("total");
 
@@ -19,36 +13,21 @@ const btn_reset = document.getElementById("btn_reset");
 
 btn_reset.disabled = true;  
 
-btn5.addEventListener("click", (e) => {
-    num = 5;
-    e.preventDefault();
-    activar();
+const btnsPorcen = document.querySelectorAll(".btn_dark_green");
 
-});
+btnsPorcen.forEach( porcen => {
+  if(porcen.localName == "button") {
+    porcen.addEventListener("click", addPercentage)
+  } else {
+    // porcen.addEventListener("input", calc_cus)
+  }
+} );
 
-btn10.addEventListener("click", (e) => {
-    num = 10;
-    e.preventDefault();
+function addPercentage(event) {
+    num = event.target.value;
+    num = Number(num);
     activar();
-});
-
-btn15.addEventListener("click", (e) => {
-    num = 15;
-    e.preventDefault();
-    activar();
-});
-
-btn25.addEventListener("click", (e) => {
-    num = 25;
-    e.preventDefault();
-    activar();
-});
-
-btn50.addEventListener("click", (e) => {
-    num = 50;
-    e.preventDefault();
-    activar();
-});
+};
 
 function activar(){
     resetCus();
@@ -73,6 +52,7 @@ function calcular(){
     // Colocado en caso de que no halla sido colocado un numero de personas
     val_per();
     btn_reset.disabled = false; 
+    console.log(typeof(num));
 };
 
 btn_reset.addEventListener("click", (e) => {
