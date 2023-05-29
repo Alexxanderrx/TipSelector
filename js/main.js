@@ -14,8 +14,9 @@ const btn_reset = document.getElementById("btn_reset");
 btn_reset.disabled = true;
 
 const btnsPorcen = document.querySelectorAll(".btn_dark_green");
-
-const btnsInputs = [...btnsPorcen, custom];
+// Los array de abajo ↓↓↓ tiene a los botones de los porcentajes , el input de custom y el btn reset
+// (necesario los tres ya que ellos interactuan obligatoriamente ☻)
+const btnsInputs = [...btnsPorcen, custom,btn_reset];
 
 let lastActive;
 
@@ -35,8 +36,6 @@ btnsInputs.forEach((btn_01, index, array) => {
 btnsPorcen.forEach(porcen => {
     if (porcen.localName == "button") {
         porcen.addEventListener("click", addPercentage);
-
-        console.log("no cambio pepepepe");
     }
 });
 
@@ -45,7 +44,6 @@ function addPercentage(event) {
     num = Number(num);
     activar();
 };
-
 
 function activar() {
     resetCus();
@@ -85,6 +83,7 @@ function resetCus() {
 
 
 function resetAll() {
+    num = 0;
     bill.value = "";
     custom.value = "";
     people.value = "";
