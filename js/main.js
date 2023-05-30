@@ -1,6 +1,6 @@
 // Hecho por Víctor Alexander Morales Lucero
-var num = 0;
-var text_error = document.getElementById("text_error");
+let num = 0;
+const text_error = document.getElementById("text_error");
 
 const bill = document.getElementById("bill");
 const custom = document.getElementById("custom");
@@ -20,16 +20,16 @@ const btnsInputs = [...btnsPorcen, custom,btn_reset];
 
 let lastActive;
 
-btnsInputs.forEach((btn_01, index, array) => {
-    console.log(btnsInputs);
-    btn_01.addEventListener("click", () => {
-        lastActive = array.find((btn_01) => btn_01.classList[1]
+btnsInputs.forEach((element, index, array) => {
+    // console.log(btnsInputs);
+    element.addEventListener("click", () => {
+        lastActive = array.find((element) => element.classList[1]
             === "active");
         if (lastActive) {
             lastActive.classList.remove("active");
-            console.log(lastActive);
+            // console.log(lastActive);
         }
-        btn_01.classList.toggle("active");
+        element.classList.toggle("active");
     });
 });
 
@@ -98,7 +98,7 @@ function resetAll() {
 };
 
 function val_per() {
-    if (people.value == 0) {
+    if (people.value <= 0) {
         people.style.borderColor = "red";
         text_error.style.color = "red";
         // nuevo style
@@ -108,12 +108,10 @@ function val_per() {
         tip_amount.innerHTML = "$0.00";
         total.innerHTML = "$0.00";
     } else {
-        if (bill.value == 0) {
+        if (bill.value <= 0) {
             tip_amount.innerHTML = "$0.00";
             total.innerHTML = "$0.00";
-        } else {
-
-        }
+        } 
         people.style.borderColor = ""
         // nuevo style
         people.style.outline = "";
